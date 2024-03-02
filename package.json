@@ -1,8 +1,10 @@
 {
   "name": "pk-js",
+  "version": "0.0.1",
   "module": "main.ts",
   "type": "module",
   "scripts": {
+    "build": "bun build --compile main.ts --outfile=pk",
     "fmt": "biome check --apply .",
     "generate-schema": "bun run scripts/print-json-schema.ts >| pkfile-schema.json"
   },

@@ -1,6 +1,6 @@
 import { pkInstallPath } from "./install.ts";
 
-export const init = () => {
+export const initHandler = () => {
 	const installPath = pkInstallPath();
 	console.log(`export PATH=$PATH:${installPath}`);
 };
