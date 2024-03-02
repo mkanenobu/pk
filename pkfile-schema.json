@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "gitUrl": {
+            "type": "string"
+          },
+          "gitTag": {
+            "type": "string"
+          },
+          "buildCommand": {
+            "type": "string"
+          },
+          "executablePath": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "gitUrl",
+          "buildCommand",
+          "executablePath"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "packages"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "pk-js",
+  "module": "main.ts",
+  "type": "module",
+  "scripts": {
+    "fmt": "biome check --apply .",
+    "generate-schema": "bun run scripts/print-json-schema.ts >| pkfile-schema.json"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "simple-git": "^3.22.0",
+    "yargs": "^17.7.2",
+    "zod": "3.22.4",
+    "zod-to-json-schema": "^3.22.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/yargs": "^17.0.32",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
