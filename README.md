@@ -4,13 +4,13 @@ Pk is git based package manager for macos.
 
 ## Usage
 
-First, build `pk` command and get executable.
+Build `pk` command and install executable
 
 ```bash
 bun run build && cp pk /your/bin/path
 ```
 
-And then, configure pk
+Configure pk
 
 ```bash
 echo 'eval "$(pk init)"' > ~/.bashrc
